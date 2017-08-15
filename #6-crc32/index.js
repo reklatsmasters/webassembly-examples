@@ -59,7 +59,7 @@ module.exports = {
   crc32
 }
 
-function crc32_internal(buf, crc) {
+function crc32(buf, crc = 0) {
   if (!Buffer.isBuffer(buf)) buf = Buffer.from(buf)
   
   const bytes = CRC_TABLE.byteLength + buf.length
@@ -69,8 +69,4 @@ function crc32_internal(buf, crc) {
   wasm.memory.set(buf, CRC_TABLE.byteLength)
   
   return wasm.exports.crc32(crc, CRC_TABLE.byteLength, buf.length)
-}
-
-function crc32(buf, crc = 0) {
-  return crc32_internal(buf, crc)
 }

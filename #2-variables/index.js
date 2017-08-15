@@ -1,4 +1,4 @@
-const wasm = require('./variables')({async: false}).exports
+const wasm = require('./variables')().exports
 
 console.log('local32', wasm.local32())
 // console.log('local64', wasm.local64())

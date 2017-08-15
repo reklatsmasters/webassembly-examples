@@ -1,5 +1,7 @@
 ;; Этот пример показывает простую функцию сложения двух параметров,
 ;; а также различные возможности определения функции.
+;;
+;; This example shows the method of creating a simple wasm function.
 (module
   (export "add1" (func $add1))
   (export "add2" (func $add2))

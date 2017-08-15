@@ -12,6 +12,7 @@
   )
   
   (func (export "greather2") (param $a i32) (param $b i32) (result i32)
+    ;; `if` has an implicit `then` for one-line instruction
     ;; if (a > b)
     (if (i32.gt_s (get_local $a) (get_local $b))
       (return (i32.add (get_local $a) (i32.const 1)))
@@ -25,14 +26,16 @@
     ;; if (a > 10)
     (if (i32.gt_s (get_local $a) (i32.const 10))
       ;; явно добавляем блок then для обработки нескольких инструкций
+      ;;
+      ;; `then` should follow by `if` explicitly for multiline instructions.
       (then
+        ;; ++a
         (set_local $a (i32.add (get_local $a) (i32.const 1)))
 
         (return (get_local $a))
       )
     )
 
-    ;; return sum
     (return (i32.const 10))
   )
 )

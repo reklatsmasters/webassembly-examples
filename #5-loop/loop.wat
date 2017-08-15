@@ -3,8 +3,8 @@
 
   (func (export "upper") (param $length i32)
     ;; var i = 0
-    (local $i i32)
-    (local $sym i32)
+    (local $i i32)    ;; store loop index
+    (local $sym i32)  ;; store char code
 
     (block $break
       ;; while(true)
