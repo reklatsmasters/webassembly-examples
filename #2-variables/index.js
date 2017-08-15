@@ -1,7 +1,7 @@
 const wasm = require('./variables')({async: false}).exports
 
-console.log('uninit32', wasm.uninit32())
-// console.log('uninit64', wasm.uninit64())
+console.log('local32', wasm.local32())
+// console.log('local64', wasm.local64())
 
 console.log('add10', wasm.add10(2))
 console.log('sub10', wasm.sub10(2))

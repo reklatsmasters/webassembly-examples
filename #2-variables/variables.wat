@@ -7,7 +7,7 @@
   ;; Можно экспортировать неизменяемые глобальные переменные.
   (export "CONST_B" (global $glob_b))
   
-  (func (export "uninit32") (result i32)
+  (func (export "local32") (result i32)
     ;; let sum
     (local $sum i32)
     
@@ -15,7 +15,7 @@
     (return (get_local $sum))
   )
   
-  (func (export "uninit64") (result i64)
+  (func (export "local64") (result i64)
     ;; let sum
     (local $sum i64)
     

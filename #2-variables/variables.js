@@ -7,7 +7,7 @@ function loadWebAssembly (opts) {
   if (!loadWebAssembly.supported) return null
 
   var imp = opts && opts.imports
-  var wasm = toUint8Array('AGFzbQEAAAABDgNgAAF/YAABfmABfwF/AwYFAAECAgIGDQJ/AUHkAAt/AEHIAQsHOgYIdW5pbml0MzIAAAh1bmluaXQ2NAABBWFkZDEwAAIFc3ViMTAAAwdDT05TVF9CAwEGYWRkMTAwAAQKLgUHAQF/IAAPCwcBAX4gAA8LBwBBCiAAagsHAEEKIABrCwwAQawCJAAjACAAags=')
+  var wasm = toUint8Array('AGFzbQEAAAABDgNgAAF/YAABfmABfwF/AwYFAAECAgIGDQJ/AUHkAAt/AEHIAQsHOAYHQ09OU1RfQgMBB2xvY2FsMzIAAAdsb2NhbDY0AAEFYWRkMTAAAgVzdWIxMAADBmFkZDEwMAAECi4FBwEBfyAADwsHAQF+IAAPCwcAQQogAGoLBwBBCiAAawsMAEGsAiQAIwAgAGoL')
   var ready = null
 
   var mod = {
