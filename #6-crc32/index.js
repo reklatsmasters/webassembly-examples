@@ -1,3 +1,4 @@
+const assert = require('assert')
 const wasm = require('./crc32')()
 
 const CRC_TABLE = Buffer.from(new Int32Array([
@@ -70,3 +71,7 @@ function crc32(buf, crc = 0) {
   
   return wasm.exports.crc32(crc, CRC_TABLE.byteLength, buf.length)
 }
+
+// test vector from taken from
+// @link http://reveng.sourceforge.net/crc-catalogue/17plus.htm#crc.cat.crc-32
+assert.strictEqual(crc32('123456789') >>> 0, 0xcbf43926)
