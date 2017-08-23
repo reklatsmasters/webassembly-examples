@@ -18,16 +18,16 @@ For 9+ see readme.
 
 ##### Ordered list of examples
 
-* [simple function](#1-simple-function)
-* [variables](#2-variables)
-* [conditions](#3-conditions)
-* [memory](#4-memory)
-* [loop](#5-loop)
-* [block, br, br_if and labels](#6-crc32)
-* [call_indirect](#7-call-indirect)
-* [shared library](#8-shared-library)
-* [simple native function](#9-native-build)
-* [emscripten](#10-emscripten)
+* [simple function](%231-simple-function)
+* [variables](%232-variables)
+* [conditions](%233-conditions)
+* [memory](%234-memory)
+* [loop](%235-loop)
+* [block, br, br_if and labels](%236-crc32)
+* [call_indirect](%237-call-indirect)
+* [shared library](%238-shared-library)
+* [simple native function](%239-native-build)
+* [emscripten](%2310-emscripten)
 
 ### License
 
