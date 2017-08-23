@@ -1,4 +1,4 @@
-### emscripten-crc32
+### emscripten
 
 This example shows the way to compile C source code to WebAssembly using `Emscripten`.
 
