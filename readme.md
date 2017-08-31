@@ -28,7 +28,7 @@ For 9+ see readme.
 * [shared library](%238-shared-library)
 * [simple native function](%239-native-build)
 * [emscripten](%2310-emscripten)
-* [webassembly (npm module)]((%2311-webassembly)
+* [webassembly (npm module)](%2311-webassembly)
 
 ### License
 
