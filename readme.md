@@ -29,7 +29,8 @@ For 9+ see readme.
 * [simple native function](%239-native-build)
 * [emscripten](%2310-emscripten)
 * [webassembly (npm module)](%2311-webassembly)
+* [data structures](%2312-data-structures)
 
 ### License
 
-MIT, 2017+
+MIT, 2017+ Dmitriy Tsvettsikh
