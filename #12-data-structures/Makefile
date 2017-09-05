@@ -1,6 +1,6 @@
 EMCC=emcc
 WASM_POST_JS=linked-list.post.js
-EXPORTED_FUNCTIONS="['_malloc','_LL_insert','_LL_create','_LL_length','_LL_remove','_LL_clear','_LL_data','_LL_size','_LL_prev','_LL_next']"
+EXPORTED_FUNCTIONS=emscripten-exported.json
 
 %.js: %.c
 	$(EMCC) \
@@ -9,7 +9,7 @@ EXPORTED_FUNCTIONS="['_malloc','_LL_insert','_LL_create','_LL_length','_LL_remov
 		-s NO_EXIT_RUNTIME=1 \
 		-s ALLOW_MEMORY_GROWTH=1 \
 		-s NO_FILESYSTEM=1 \
-		-s EXPORTED_FUNCTIONS=$(EXPORTED_FUNCTIONS) \
+		-s EXPORTED_FUNCTIONS="@$(EXPORTED_FUNCTIONS)" \
 		--post-js $(WASM_POST_JS) \
 		$< -o $@
 
