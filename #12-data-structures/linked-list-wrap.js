@@ -1,3 +1,9 @@
+const fs = require('fs')
+const emscripten = require('./linked-list')
+const Module = emscripten({
+  wasmBinary: fs.readFileSync('./linked-list.wasm')
+})
+
 const NULL = 0
 
 class Node {
@@ -101,11 +107,4 @@ function malloc(size) {
   return addr
 }
 
-const ready = new Promise(resolve => {
-  Module.onRuntimeInitialized = resolve
-})
-
-module.exports = {
-  LinkedList,
-  ready
-}
+module.exports = LinkedList

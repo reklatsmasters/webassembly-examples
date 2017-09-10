@@ -10,7 +10,8 @@ EXPORTED_FUNCTIONS=emscripten-exported.json
 		-s ALLOW_MEMORY_GROWTH=1 \
 		-s NO_FILESYSTEM=1 \
 		-s EXPORTED_FUNCTIONS="@$(EXPORTED_FUNCTIONS)" \
-		--post-js $(WASM_POST_JS) \
+		-s MODULARIZE=1 \
+		-s BINARYEN_ASYNC_COMPILATION=0 \
 		$< -o $@
 
 all: linked-list.js
