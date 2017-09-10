@@ -28,6 +28,7 @@ For 9+ see readme.
 * [shared library](%238-shared-library)
 * [simple native function](%239-native-build)
 * [emscripten](%2310-emscripten)
+* [emscripten (synchronous initialization)](%2313-emscripten-synс-require)
 * [webassembly (npm module)](%2311-webassembly)
 * [data structures](%2312-data-structures)
 
