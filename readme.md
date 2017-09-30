@@ -1,6 +1,6 @@
 ## webassembly-examples
 
-A small collection of examples on [webassembly](http://webassembly.org/).
+From Simple To Complex. A complete collection of [webassembly](http://webassembly.org/) examples.
 
 ## Usage
 
