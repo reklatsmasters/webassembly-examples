@@ -31,6 +31,7 @@ For 9+ see readme.
 * [emscripten (synchronous initialization)](%2313-emscripten-synс-require)
 * [webassembly (npm module)](%2311-webassembly)
 * [data structures](%2312-data-structures)
+* [browser](%2314-browser)
 
 ### License
 
