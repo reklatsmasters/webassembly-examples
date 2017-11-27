@@ -34,6 +34,7 @@ For 9+ see readme.
 * [browser](%2314-browser)
 * [webpack & emscripten](%2315-webpack)
 * [hello, rust](%2316-hello-rust)
+* [webpack (v3) + rust](%2317-webpack-v3-rust)
 
 ### License
 
