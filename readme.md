@@ -33,6 +33,7 @@ For 9+ see readme.
 * [data structures](%2312-data-structures)
 * [browser](%2314-browser)
 * [webpack & emscripten](%2315-webpack)
+* [hello, rust](%2316-hello-rust)
 
 ### License
 
