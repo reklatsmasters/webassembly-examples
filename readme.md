@@ -32,7 +32,7 @@ For 9+ see readme.
 * [webassembly (npm module)](%2311-webassembly)
 * [data structures](%2312-data-structures)
 * [browser](%2314-browser)
-* [working with webpack](%2315-webpack)
+* [webpack & emscripten](%2315-webpack)
 
 ### License
 
