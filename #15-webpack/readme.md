@@ -18,5 +18,5 @@ make
 webpack
 
 # run http server
-serve -o
+webpack-dev-server
 ```

@@ -20,9 +20,9 @@ cargo install --git https://github.com/alexcrichton/wasm-gc
 npm i
 ```
 
-* Install minimal web server
+* Install web server
 ```bash
-npm i -g serve
+npm i -g webpack-dev-server
 ```
 
 ## Build
@@ -43,7 +43,7 @@ webpack
 * Start web server
 
 ```bash
-serve
+webpack-dev-server
 ```
 
 * Open dev tools / console
