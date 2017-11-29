@@ -16,10 +16,7 @@ module.exports = {
         test: /\.(wasm)$/,
         use: [
           {
-            loader: 'url',
-            options: {
-              limit: Infinity,
-            }
+            loader: 'wasm',
           }
         ]
       }
