@@ -1,4 +1,4 @@
-This example shows you how to use Rust in the Web using WebAssembly and webpack.
+This example shows you how to use Rust in the Web with webpack v3 (current stable).
 
 ## Install
 

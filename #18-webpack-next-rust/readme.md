@@ -1,3 +1,5 @@
+This example shows you how to use Rust in the Web with future version of webpack.
+
 ## Install
 
 * Install [rust](https://www.rust-lang.org/)
