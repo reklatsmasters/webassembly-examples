@@ -35,6 +35,7 @@ For 9+ see readme.
 * [webpack & emscripten](%2315-webpack)
 * [hello, rust](%2316-hello-rust)
 * [webpack (v3) + rust](%2317-webpack-v3-rust)
+* [webpack#next + rust](%2318-webpack-v3-rust)
 
 ### License
 
